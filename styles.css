@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #F3F5FC;
+    --secondary-color: #0A3871;
+    --tertiary-color: #ffffff;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: "Inter", sans-serif;
+}
+
+
+.encriptador {
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+.encriptador__input {
+    padding: 30px;
+}
+
+.encriptador__input__textarea {
+    resize: none;
+    background-color: var(--primary-color);
+    border: none;
+    height: 650px;
+    width: 850px;
+    text-transform: lowercase;
+}
+.encriptador__input__textarea::placeholder {
+    font-size: 32px;
+    color: var(--secondary-color);
+}
+.encriptador__input__textarea:focus {
+    font-size: 32px;
+    color: var(--secondary-color);
+    border: none;
+    outline: none;
+}
+
+.encriptador__input__aviso {
+    font-size: 12px;
+    margin: 16px;
+}
+
+.encriptador__input__boton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.encriptador__input__boton__encriptar {
+    width: 255px;
+    height: 55px;
+    border: 1px var(--secondary-color) solid;
+    border-radius: 25px;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    cursor: pointer;
+}
+
+.encriptador__input__boton__desencriptar {
+    width: 255px;
+    height: 55px;
+    border: 1px var(--secondary-color) solid;
+    border-radius: 25px;
+    background-color: #D8DFE8;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.encriptador__output__respuesta {
+    background: var(--tertiary-color);
+    background-image: url("assets/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center 150px;
+    border: none;
+    border-radius: 24px;
+    color: var(--secondary-color);
+    padding: 20px;
+    resize: none;
+    font-size: 24px;
+    width: 350px;
+    height: 770px;
+    margin-right: 20px;
+}
+
+.encriptador__output__respuesta:focus {
+    outline: none;
+}
+
+.encriptador__output__mensaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+    gap: 20px;
+    position: relative; 
+    bottom: 22%;
+    left:40px;
+    margin-bottom: -20%;
+}
+
+.encriptador__output__mensaje__no__encontrado {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.encriptador__output__boton__copiar {
+    width: 255px;
+    height: 55px;
+    border: 1px var(--secondary-color) solid;
+    border-radius: 25px;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    display: none;
+    margin-top: 50px;
+    position: relative; 
+    top: 65%;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+}
+

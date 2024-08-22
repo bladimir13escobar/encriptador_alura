@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <main class="encriptador">
+        <div>
+            <img src="assets/Logo.png" alt="logo de Alura">
+        </div>
+
+        <section class="encriptador__input">
+            <textarea class="encriptador__input__textarea" rows="50" cols="100"
+                placeholder="Ingresa el texto aqui"></textarea>
+            <p class="encriptador__input__aviso">
+                <i class="fas fa-exclamation-circle"></i>&nbsp;&nbsp;Solo letrasminúsculas y sin acentos
+            </p>
+            <div class="encriptador__input__boton">
+                <button class="encriptador__input__boton__encriptar">Encriptar</button>
+                <button class="encriptador__input__boton__desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="encriptador__output">
+            <textarea class="encriptador__output__respuesta" rows="40" cols="40" readonly></textarea>
+            <div class="encriptador__output__mensaje">
+                <p class="encriptador__output__mensaje__no__encontrado">Ningún mensaje fue encontrado</p>
+                <p class="encriptador__output__mensaje__descripcion">Ingresa el texto que desees encriptar
+                    o desencriptar.</p>
+                <div>
+                    <button class="encriptador__output__boton__copiar">Copiar</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>Elaborado por Bladimir Escobar diaz</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
