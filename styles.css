@@ -73,6 +73,11 @@ body {
     color: var(--secondary-color);
     cursor: pointer;
 }
+
+.encriptador__output {
+    display: flex;
+    flex-direction: column;
+}
 .encriptador__output__respuesta {
     background: var(--tertiary-color);
     background-image: url("assets/Muñeco.png");
@@ -101,9 +106,9 @@ body {
     width: 300px;
     text-align: center;
     gap: 20px;
-    position: relative; 
+    position: relative;
     bottom: 22%;
-    left:40px;
+    left: 40px;
     margin-bottom: -20%;
 }
 
@@ -122,8 +127,6 @@ body {
     cursor: pointer;
     display: none;
     margin-top: 50px;
-    position: relative; 
-    top: 65%;
 }
 
 footer {
@@ -133,3 +136,65 @@ footer {
     text-align: center;
 }
 
+/* Tabletas (ancho máximo de 1024px) */
+@media (max-width: 1024px) {
+
+    .logo {
+        align-self: flex-start;
+    }
+
+    .encriptador {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .encriptador__input__textarea {
+        width: 100%;
+    }
+
+    .encriptador__output__respuesta {
+        background-image: none;
+        width: 100%;
+        height: 250px;
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    .encriptador__output__mensaje {
+        width: auto;
+        position: absolute;
+        bottom: -30%;
+        left: 30%;
+        margin-bottom: 0%;
+    }
+
+    .encriptador__output__boton__copiar {
+        margin-left: 30%;
+    }
+}
+
+/* Teléfonos móviles (ancho máximo de 768px) */
+@media (max-width: 768px) {
+    .encriptador {
+        padding: 20px;
+    }
+    .encriptador__input {
+        padding: 10px;
+    }
+    .encriptador__input__boton {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .encriptador__input__boton__encriptar, .encriptador__input__boton__desencriptar {
+        width: 100%; 
+    }
+
+    .encriptador__output__mensaje {
+        width: auto;
+        position: absolute;
+        bottom: -25%;
+        left: 0%;
+        margin-bottom: 0%;
+        padding: 20px;
+    }
+}
