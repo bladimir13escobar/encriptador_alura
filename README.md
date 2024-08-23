@@ -1,4 +1,5 @@
 # Encriptador de Texto
+![Logo de la aplicación](assets/encriptador.png)
 
 Este es un proyecto de encriptador de texto desarrollado con HTML, CSS y JavaScript. El objetivo del encriptador es permitir a los usuarios cifrar y descifrar mensajes de texto de manera simple y eficiente.
 
